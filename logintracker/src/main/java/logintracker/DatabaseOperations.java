@@ -17,7 +17,7 @@ public class DatabaseOperations {
     		Class.forName("org.postgresql.Driver");
     		connection = DriverManager.getConnection(url, user, password);
 		} catch (Exception e) {
-			System.out.println("Error in connection "+e);
+			System.out.println("Error in abcde connection "+e);
 		}
     	return connection;
     }
