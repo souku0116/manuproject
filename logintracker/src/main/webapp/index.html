@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginTracker - Employee Time Tracking</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif;">
+    <!-- Header -->
+    <header style="background-color: #333; color: white; text-align: center; padding: 20px 0;">
+        <h1>LoginTracker</h1>
+        <p>Track Employee Login and Logout Times</p>
+    </header>
+
+    <!-- Main content -->
+    <div style="display: flex; justify-content: space-between; padding: 40px;">
+        <!-- Image in the center -->
+        <div style="flex: 1; text-align: center;">
+            <img src="https://via.placeholder.com/300" alt="Company Image" style="border-radius: 50%;">
+            <p style="margin-top: 20px; font-size: 18px;">
+                Welcome to LoginTracker, your solution for tracking employee login times and attendance records.
+            </p>
+        </div>
+
+        <!-- Login form in the center-right -->
+        <div style="flex: 1; text-align: right;">
+            <div style="border: 1px solid #ccc; padding: 20px; border-radius: 10px; width: 300px; background-color: #f9f9f9;">
+                <h2 style="margin-bottom: 20px;">Login</h2>
+                <form action="/logintracker/login" method="post">
+    <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+    <input type="email" name="email" style="width: 80%; padding: 10px; margin-bottom: 20px;" required>
+
+    <label for="password" style="display: block; margin-bottom: 5px;">Password:</label>
+    <input type="password" name="password" style="width: 80%; padding: 10px; margin-bottom: 20px;" required>
+
+    <input type="submit" value="Login" style="background-color: #333; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+</form>
+                <p id="loginMsg" style="color: red; margin-top: 10px;"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0;">
+        <p>&copy; 2024 LoginTracker.com. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
